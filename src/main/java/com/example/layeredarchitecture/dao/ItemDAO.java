@@ -14,4 +14,5 @@ public interface ItemDAO {
     public ArrayList<ItemDTO> getAllItem() throws SQLException, ClassNotFoundException ;
     public String generateID() throws SQLException, ClassNotFoundException;
 
+    ItemDTO getItemDetail(String code) throws SQLException, ClassNotFoundException;
 }

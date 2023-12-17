@@ -1,5 +1,6 @@
-package com.example.layeredarchitecture.dao;
+package com.example.layeredarchitecture.dao.impl;
 
+import com.example.layeredarchitecture.dao.CustomerDAO;
 import com.example.layeredarchitecture.db.DBConnection;
 import com.example.layeredarchitecture.model.CustomerDTO;
 
@@ -72,5 +73,10 @@ public class CustomerDAOImpl implements CustomerDAO {
         } else {
             return "C00-001";
         }
+    }
+
+    @Override
+    public CustomerDTO getCustomerDetail(String id) throws SQLException, ClassNotFoundException {
+        return null;
     }
 }
