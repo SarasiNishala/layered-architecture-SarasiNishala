@@ -14,7 +14,7 @@ public class BOFactory {
         return (boFactory == null)? getBaoFactory(): boFactory;
     }
     public enum BAOTypes{
-        CUSTOMER,ITEM,ORDER
+        CUSTOMER,ITEM,PLACE_ORDER
     }
 
     public SupperBO getBO(BAOTypes baoTypes){
@@ -23,7 +23,7 @@ public class BOFactory {
                 return new CustomerBOImpl();
             case ITEM:
                 return new ItemBOImpl();
-            case ORDER:
+            case PLACE_ORDER:
                 return new PlaceOrderBOImpl();
             default:
                 return null;
