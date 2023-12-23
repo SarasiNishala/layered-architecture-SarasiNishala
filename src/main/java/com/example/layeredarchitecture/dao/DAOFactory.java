@@ -12,7 +12,7 @@ public class DAOFactory {
     private static DAOFactory daoFactory;
 
     private DAOFactory(){}
-    private static DAOFactory getDaoFactory() {
+    public static DAOFactory getDaoFactory() {
         return (daoFactory == null)?daoFactory= new DAOFactory(): daoFactory;
     }
 
