@@ -1,8 +1,8 @@
 package com.example.layeredarchitecture.dao.custom;
 
+import com.example.layeredarchitecture.dao.SupperDAO;
 import com.example.layeredarchitecture.model.CustomDTO;
-import com.example.layeredarchitecture.model.CustomerDTO;
 
-public interface QueryDAO {
+public interface QueryDAO extends SupperDAO {
     void CustomerOrderDetails(CustomDTO customDTO);
 }

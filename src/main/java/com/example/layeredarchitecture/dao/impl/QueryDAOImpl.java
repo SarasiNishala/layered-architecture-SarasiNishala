@@ -7,6 +7,6 @@ public class QueryDAOImpl implements QueryDAO {
 
     @Override
     public void CustomerOrderDetails(CustomDTO customDTO) {
-        //join query
+
     }
 }
